@@ -11,3 +11,4 @@ AUX_SOURCE_DIRECTORY(src DIR_SRCS)
 
 add_executable(lslserver main.cpp )
 add_executable(simple_server learn/src/simple_server.cpp)
+add_executable(simple_client learn/src/simple_client.cpp)

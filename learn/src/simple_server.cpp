@@ -15,18 +15,19 @@
 
 using std::cout;
 
-static bool stop= false;
-static void handle_term(int sig){
-    stop= true;
+static bool stop = false;
+
+static void handle_term(int sig) {
+    stop = true;
 }
 
 int main(int argc, char *argv[]) {
-    std::cout<<"lsl";
-    signal(SIGTERM,handle_term);
+    std::cout << "lsl";
+    signal(SIGTERM, handle_term);
 
     const char *ip = argv[1];//ip
     int port = atoi(argv[2]);//端口
-    int backlog = atoi(argv[3]);//监听队列长度
+    int backlog = 5;//监听队列长度
     //创建socket，ipv4，字符流（tcp）
     int sock = socket(PF_INET, SOCK_STREAM, 0);
     assert(sock > 0);
@@ -38,13 +39,28 @@ int main(int argc, char *argv[]) {
     address.sin_port = htons(port);//端口
     //命名Socket / 绑定Socket
     int ret = bind(sock, (struct sockaddr *) &address, sizeof(address));
-    assert(ret!=-1);
+    assert(ret != -1);
     //监听Socket
-    ret= listen(sock,backlog);
-    assert(ret!=-1);
-    while (!stop){
+    ret = listen(sock, backlog);
+    assert(ret != -1);
+    //暂停10s等待客户端连接
+    sleep(10);
+    //客户端tcp连接描述
+    struct sockaddr_in client;
+    socklen_t client_addrlength = sizeof(client);
+    int connfd = accept(sock, (struct sockaddr *) &client, &client_addrlength);
+    if (connfd < 0) {
+        std::cout << "客户端连接错误，错误码：" << connfd;
+    } else {
+        char remote[INET_ADDRSTRLEN];
+        std::cout << "客户端连接成功：" << inet_ntop(AF_INET, &client.sin_addr, remote, INET_ADDRSTRLEN) << "端口："
+                  << ntohs(client.sin_port) << std::endl;
+    }
+
+    while (!stop) {
         sleep(1);
     }
+
     //关闭Socket
     close(sock);
 

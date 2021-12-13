@@ -142,6 +142,43 @@ simple_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/build
 .PHONY : simple_server/fast
 
+#=============================================================================
+# Target rules for targets named simple_client
+
+# Build rule for target.
+simple_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_client
+.PHONY : simple_client
+
+# fast build rule for target.
+simple_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/build
+.PHONY : simple_client/fast
+
+learn/src/simple_client.o: learn/src/simple_client.cpp.o
+.PHONY : learn/src/simple_client.o
+
+# target to build an object file
+learn/src/simple_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.o
+.PHONY : learn/src/simple_client.cpp.o
+
+learn/src/simple_client.i: learn/src/simple_client.cpp.i
+.PHONY : learn/src/simple_client.i
+
+# target to preprocess a source file
+learn/src/simple_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.i
+.PHONY : learn/src/simple_client.cpp.i
+
+learn/src/simple_client.s: learn/src/simple_client.cpp.s
+.PHONY : learn/src/simple_client.s
+
+# target to generate assembly for a file
+learn/src/simple_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.s
+.PHONY : learn/src/simple_client.cpp.s
+
 learn/src/simple_server.o: learn/src/simple_server.cpp.o
 .PHONY : learn/src/simple_server.o
 
@@ -199,7 +236,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lslserver"
+	@echo "... simple_client"
 	@echo "... simple_server"
+	@echo "... learn/src/simple_client.o"
+	@echo "... learn/src/simple_client.i"
+	@echo "... learn/src/simple_client.s"
 	@echo "... learn/src/simple_server.o"
 	@echo "... learn/src/simple_server.i"
 	@echo "... learn/src/simple_server.s"

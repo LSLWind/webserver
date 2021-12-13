@@ -122,4 +122,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lslserver.dir/DependInfo.cmake"
   "CMakeFiles/simple_server.dir/DependInfo.cmake"
+  "CMakeFiles/simple_client.dir/DependInfo.cmake"
   )
