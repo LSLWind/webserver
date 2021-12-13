@@ -1,0 +1,3 @@
+"F:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\lslserver.dir/objects.a
+"F:\CLion 2021.2.3\mingw64\bin\ar.exe" cr CMakeFiles\lslserver.dir/objects.a @CMakeFiles\lslserver.dir\objects1.rsp
+"F:\CLion 2021.2.3\mingw64\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\lslserver.dir/objects.a -Wl,--no-whole-archive -o lslserver.exe -Wl,--out-implib,liblslserver.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\lslserver.dir\linklibs.rsp
