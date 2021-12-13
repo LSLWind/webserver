@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="192.168.187.128" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="192.168.187.128">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/usr/local/lslserver" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Remote GDB Server (3528d65f-418b-49ac-8569-8b364b4cdfc6)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Remote Host (3ca4b4ad-6613-4872-a526-4512274df77b)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/tmp.hhD9LmWBVP" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote-host" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote-host" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="Remote Host (ed6dc24f-53aa-4076-89d3-db72b46cdf6c)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
