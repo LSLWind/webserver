@@ -1,0 +1,4 @@
+/usr/local/lslserver/build/CMakeFiles/lslserver.dir
+/usr/local/lslserver/build/CMakeFiles/simple_server.dir
+/usr/local/lslserver/build/CMakeFiles/edit_cache.dir
+/usr/local/lslserver/build/CMakeFiles/rebuild_cache.dir
