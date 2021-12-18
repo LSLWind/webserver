@@ -15,18 +15,21 @@
 
 using std::cout;
 
-static bool stop= false;
-static void handle_term(int sig){
-    stop= true;
+static bool stop = false;
+
+static void handle_term(int sig) {
+    stop = true;
 }
 
-int main(int argc, char *argv[]) {
-    std::cout<<"lsl";
-    signal(SIGTERM,handle_term);
+const int BUF_SIZE = 1024;
 
-    const char *ip = argv[1];//ip
-    int port = atoi(argv[2]);//端口
-    int backlog = atoi(argv[3]);//监听队列长度
+int main(int argc, char *argv[]) {
+    std::cout << "lsl";
+    signal(SIGTERM, handle_term);
+
+    const char *ip = "192.168.187.128";//ip
+    int port = atoi("1234");//端口
+    int backlog = 5;//监听队列长度
     //创建socket，ipv4，字符流（tcp）
     int sock = socket(PF_INET, SOCK_STREAM, 0);
     assert(sock > 0);
@@ -38,13 +41,34 @@ int main(int argc, char *argv[]) {
     address.sin_port = htons(port);//端口
     //命名Socket / 绑定Socket
     int ret = bind(sock, (struct sockaddr *) &address, sizeof(address));
-    assert(ret!=-1);
+    assert(ret != -1);
     //监听Socket
-    ret= listen(sock,backlog);
-    assert(ret!=-1);
-    while (!stop){
-        sleep(1);
+    ret = listen(sock, backlog);
+    assert(ret != -1);
+    //客户端tcp连接描述，等待符合格式的连接
+    struct sockaddr_in client;
+    socklen_t client_addrlength = sizeof(client);
+    //接受客户端连接
+    while (true) {
+        int connfd = accept(sock, (struct sockaddr *) &client, &client_addrlength);
+        if (connfd < 0) {
+            std::cout << "客户端连接错误，错误码：" << connfd;
+        } else {
+            //接收客户端信息
+            char remote[INET_ADDRSTRLEN];
+            std::cout << "客户端连接成功：" << inet_ntop(AF_INET, &client.sin_addr, remote, INET_ADDRSTRLEN) << "，端口："
+                      << ntohs(client.sin_port) << std::endl;
+//            struct sockaddr clientInfo;
+//            int clientInfoFd = getpeername(connfd, &clientInfo, &client_addrlength);
+            char buffer[BUF_SIZE];
+            memset(buffer, '\0', BUF_SIZE);
+            int res = recv(connfd, buffer, BUF_SIZE - 1, 0);
+            std::cout << "接受信息：" << res << "，" << buffer << std::endl;
+            close(connfd);
+            if (res == -1)break;
+        }
     }
+
     //关闭Socket
     close(sock);
 
