@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(lslserver)
+project(webserver)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -12,3 +12,8 @@ AUX_SOURCE_DIRECTORY(src DIR_SRCS)
 add_executable(lslserver main.cpp )
 add_executable(simple_server learn/src/simple_server.cpp)
 add_executable(simple_client learn/src/simple_client.cpp)
+
+
+
+
+

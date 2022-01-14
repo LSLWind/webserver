@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/usr/local/lslserver/main.cpp" "CMakeFiles/lslserver.dir/main.cpp.o" "gcc" "CMakeFiles/lslserver.dir/main.cpp.o.d"
+  "/usr/local/webserver/main.cpp" "CMakeFiles/lslserver.dir/main.cpp.o" "gcc" "CMakeFiles/lslserver.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

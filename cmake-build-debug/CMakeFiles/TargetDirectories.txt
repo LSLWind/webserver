@@ -1,4 +1,0 @@
-F:/projects/c+projects/clionprojects/lslserver/cmake-build-debug/CMakeFiles/lslserver.dir
-F:/projects/c+projects/clionprojects/lslserver/cmake-build-debug/CMakeFiles/simple_server.dir
-F:/projects/c+projects/clionprojects/lslserver/cmake-build-debug/CMakeFiles/edit_cache.dir
-F:/projects/c+projects/clionprojects/lslserver/cmake-build-debug/CMakeFiles/rebuild_cache.dir

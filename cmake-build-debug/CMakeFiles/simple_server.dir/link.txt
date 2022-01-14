@@ -1,3 +1,0 @@
-"F:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\simple_server.dir/objects.a
-"F:\CLion 2021.2.3\mingw64\bin\ar.exe" cr CMakeFiles\simple_server.dir/objects.a @CMakeFiles\simple_server.dir\objects1.rsp
-"F:\CLion 2021.2.3\mingw64\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\simple_server.dir/objects.a -Wl,--no-whole-archive -o simple_server.exe -Wl,--out-implib,libsimple_server.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\simple_server.dir\linklibs.rsp

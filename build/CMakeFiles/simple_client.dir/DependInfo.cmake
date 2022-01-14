@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/usr/local/webserver/learn/src/simple_server.cpp" "CMakeFiles/simple_server.dir/learn/src/simple_server.cpp.o" "gcc" "CMakeFiles/simple_server.dir/learn/src/simple_server.cpp.o.d"
+  "/usr/local/webserver/learn/src/simple_client.cpp" "CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.o" "gcc" "CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -7,10 +7,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "../CMakeLists.txt"
-  "CMakeFiles/3.22.0/CMakeCCompiler.cmake"
-  "CMakeFiles/3.22.0/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.22.0/CMakeSystem.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/local/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -28,6 +24,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
   "/usr/local/share/cmake-3.22/Modules/Platform/Linux.cmake"
   "/usr/local/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+  "../CMakeLists.txt"
+  "CMakeFiles/3.22.0/CMakeCCompiler.cmake"
+  "CMakeFiles/3.22.0/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.22.0/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:
@@ -45,4 +45,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/lslserver.dir/DependInfo.cmake"
   "CMakeFiles/simple_server.dir/DependInfo.cmake"
+  "CMakeFiles/simple_client.dir/DependInfo.cmake"
   )

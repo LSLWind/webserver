@@ -1,4 +1,4 @@
-CMakeFiles/lslserver.dir/main.cpp.o: /usr/local/lslserver/main.cpp \
+CMakeFiles/lslserver.dir/main.cpp.o: /usr/local/webserver/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/7/iostream \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \

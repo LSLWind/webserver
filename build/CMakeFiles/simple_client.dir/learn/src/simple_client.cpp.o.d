@@ -1,5 +1,5 @@
-CMakeFiles/simple_server.dir/learn/src/simple_server.cpp.o: \
- /usr/local/webserver/learn/src/simple_server.cpp \
+CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.o: \
+ /usr/local/webserver/learn/src/simple_client.cpp \
  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -69,7 +69,8 @@ CMakeFiles/simple_server.dir/learn/src/simple_server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h /usr/include/netdb.h \
+ /usr/include/rpc/netdb.h /usr/include/x86_64-linux-gnu/bits/netdb.h \
  /usr/include/c++/7/stdlib.h /usr/include/c++/7/cstdlib \
  /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \

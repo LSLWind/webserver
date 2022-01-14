@@ -1,5 +1,0 @@
-/tmp/tmp.hhD9LmWBVP/cmake-build-debug-remote-host/CMakeFiles/lslserver.dir
-/tmp/tmp.hhD9LmWBVP/cmake-build-debug-remote-host/CMakeFiles/simple_server.dir
-/tmp/tmp.hhD9LmWBVP/cmake-build-debug-remote-host/CMakeFiles/simple_client.dir
-/tmp/tmp.hhD9LmWBVP/cmake-build-debug-remote-host/CMakeFiles/edit_cache.dir
-/tmp/tmp.hhD9LmWBVP/cmake-build-debug-remote-host/CMakeFiles/rebuild_cache.dir
