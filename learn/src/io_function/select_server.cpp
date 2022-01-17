@@ -1,34 +1,29 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <sys/socket.h>
 #include <arpa/inet.h>
 #include <csignal>
 #include <unistd.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <vector>
-#include "string.h"
-#include "iostream"
+#include <string.h>
+#include <iostream>
+#include <algorithm>
+#include <math.h>
 
 using std::cout;
+using std::endl;
 using std::vector;
-static bool stop = false;
-
-static void handle_term(int sig)
-{
-    stop = true;
-}
 
 const int BUF_SIZE = 1024;
 
 int main(int argc, char *argv[])
 {
-    std::cout << "lsl";
-    signal(SIGTERM, handle_term);
+    cout << "lsl" << endl;
 
     const char *ip = "127.0.0.1"; //ip
-    int port = atoi("1234");      //端口
+    int port = atoi("8899");            //端口
 
     /*创建一个IPv4 socket地址，主要设置ip和端口信息*/
     struct sockaddr_in address;
@@ -66,19 +61,21 @@ int main(int argc, char *argv[])
 
     while (true)
     {
+        cout << "进入循环" << endl;
         memset(buffer, 0, BUF_SIZE);
         /*每次调用select前都要重新在read_fds和exception_fds中设置文件描述符conn_fd，因为事件发生之后，文件描述符集合将被内核修改*/
-        //设置对服务器/客户端文件描述符监听
+        //设置对服务器/客户端文件描述符监听，重复监听变化
         FD_SET(listen_fd, &read_fds);
         FD_SET(listen_fd, &exception_fds);
-        for (auto conn_fd : conn_fds)
-        {
-            FD_SET(conn_fd, &read_fds);
-            FD_SET(conn_fd, &exception_fds);
-        }
 
         //select复用，在一段指定时间内，监听用户感兴趣的文件描述符上的可读、可写和异常等事件。阻塞等到事件到来
-        ret = select(max_conn_fd + 1, &read_fds, NULL, &exception_fds, NULL);
+        int max_conn_fd = 0;
+        if (conn_fds.size() != 0)
+        {
+            auto max_iter = std::max_element(conn_fds.begin(), conn_fds.end());
+            max_conn_fd = *max_iter;
+        }
+        ret = select(std::max(0, std::max(listen_fd, max_conn_fd)) + 1, &read_fds, NULL, &exception_fds, NULL);
         if (ret < 0)
         {
             std::cout << "select多路复用失败" << std::endl;
@@ -93,34 +90,46 @@ int main(int argc, char *argv[])
             struct sockaddr_in client;
             socklen_t client_addrlength = sizeof(client);
             int conn_fd = accept(listen_fd, (struct sockaddr *)&client, &client_addrlength);
-            conn_fds[conn_count++] = conn_fd;
-            conn_count = conn_count % max_conn_fd;
+            conn_fds.push_back(conn_fd);
+            cout << "客户端连接成功，conn_fd：" << conn_fd << endl;
+            FD_SET(conn_fd, &read_fds);
         }
-        //普通可读事件
-        if (FD_ISSET(conn_fd, &read_fds))
+
+        //连接事件队列conn_fds中有事件，遍历扫描
+        for (vector<int>::iterator it = conn_fds.begin(); it != conn_fds.end(); it++)
         {
-            ret = recv(conn_fd, buffer, sizeof(buffer) - 1, 0);
-            if (ret < 0)
+            int conn_fd = *it;
+            //普通可读事件
+            if (FD_ISSET(conn_fd, &read_fds))
             {
-                std::cout << "读取普通数据失败，错误码：" << ret << std::endl;
-                break;
+                ret = recv(conn_fd, buffer, sizeof(buffer) - 1, 0);
+                if (ret < 0)
+                {
+                    std::cout << "读取普通数据失败，错误码：" << ret << std::endl;
+                    break;
+                }
+                std::cout << "读取数据：" << buffer << " ret：" << ret << std::endl;
+                close(conn_fd);
+                it = conn_fds.erase(it);
+                it--;
             }
-            std::cout << "读取数据：" << buffer << " ret：" << std::endl;
-        }
-        //对于异常事件，采用带MSG_OOB标志的recv函数读取带外数据
-        else if (FD_ISSET(conn_fd, &exception_fds))
-        {
-            ret = recv(conn_fd, buffer, sizeof(buffer) - 1, MSG_OOB); //MSG_OOB TCP紧急指针标志位
-            if (ret < 0)
-            {   
-                std::cout << "读取紧急数据失败，错误码：" << ret << std::endl;
-                break;
+            //对于异常事件，采用带MSG_OOB标志的recv函数读取带外数据
+            else if (FD_ISSET(conn_fd, &exception_fds))
+            {
+                ret = recv(conn_fd, buffer, sizeof(buffer) - 1, MSG_OOB); //MSG_OOB TCP紧急指针标志位
+                if (ret < 0)
+                {
+                    std::cout << "读取紧急数据失败，错误码：" << ret << std::endl;
+                    break;
+                }
+                std::cout << "读取紧急数据：" << buffer << " ret：" << std::endl;
+                close(conn_fd);
+                it = conn_fds.erase(it);
+                it--;
             }
-            std::cout << "读取紧急数据：" << buffer << " ret：" << std::endl;
         }
     }
 
-    close(conn_fd);
     //关闭Socket
     close(listen_fd);
 

@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-7 -g CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o -o select_server 

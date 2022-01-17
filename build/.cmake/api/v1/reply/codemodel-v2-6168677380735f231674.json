@@ -17,7 +17,10 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -34,7 +37,10 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4,
+						5
 					]
 				}
 			],
@@ -43,22 +49,43 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lslserver::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lslserver-Debug-5a772e5c829682fe5d3b.json",
+					"jsonFile" : "target-lslserver-Debug-ccc8c4bb5a11325e4fb3.json",
 					"name" : "lslserver",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "select_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-select_client-Debug-483ef554c3f6d25c10a3.json",
+					"name" : "select_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "select_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-select_server-Debug-823d2e0653ce45140d1d.json",
+					"name" : "select_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "simple_client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_client-Debug-be938622840a4289f807.json",
+					"jsonFile" : "target-simple_client-Debug-464f74a5ac42c7e9917e.json",
 					"name" : "simple_client",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "simple_server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_server-Debug-e4678aceb7b25e675662.json",
+					"jsonFile" : "target-simple_server-Debug-e5b97445f68808e6eedc.json",
 					"name" : "simple_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test-Debug-73c69a0aca812af81fd1.json",
+					"name" : "test",
 					"projectIndex" : 0
 				}
 			]

@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-7 -g CMakeFiles/select_client.dir/learn/src/io_function/select_client.cpp.o -o select_client 

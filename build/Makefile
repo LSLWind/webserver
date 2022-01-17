@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named lslserver
 
 # Build rule for target.
@@ -154,6 +167,80 @@ simple_client: cmake_check_build_system
 simple_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/build
 .PHONY : simple_client/fast
+
+#=============================================================================
+# Target rules for targets named select_server
+
+# Build rule for target.
+select_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 select_server
+.PHONY : select_server
+
+# fast build rule for target.
+select_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
+.PHONY : select_server/fast
+
+#=============================================================================
+# Target rules for targets named select_client
+
+# Build rule for target.
+select_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 select_client
+.PHONY : select_client
+
+# fast build rule for target.
+select_client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
+.PHONY : select_client/fast
+
+learn/src/io_function/select_client.o: learn/src/io_function/select_client.cpp.o
+.PHONY : learn/src/io_function/select_client.o
+
+# target to build an object file
+learn/src/io_function/select_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/learn/src/io_function/select_client.cpp.o
+.PHONY : learn/src/io_function/select_client.cpp.o
+
+learn/src/io_function/select_client.i: learn/src/io_function/select_client.cpp.i
+.PHONY : learn/src/io_function/select_client.i
+
+# target to preprocess a source file
+learn/src/io_function/select_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/learn/src/io_function/select_client.cpp.i
+.PHONY : learn/src/io_function/select_client.cpp.i
+
+learn/src/io_function/select_client.s: learn/src/io_function/select_client.cpp.s
+.PHONY : learn/src/io_function/select_client.s
+
+# target to generate assembly for a file
+learn/src/io_function/select_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/learn/src/io_function/select_client.cpp.s
+.PHONY : learn/src/io_function/select_client.cpp.s
+
+learn/src/io_function/select_server.o: learn/src/io_function/select_server.cpp.o
+.PHONY : learn/src/io_function/select_server.o
+
+# target to build an object file
+learn/src/io_function/select_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o
+.PHONY : learn/src/io_function/select_server.cpp.o
+
+learn/src/io_function/select_server.i: learn/src/io_function/select_server.cpp.i
+.PHONY : learn/src/io_function/select_server.i
+
+# target to preprocess a source file
+learn/src/io_function/select_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.i
+.PHONY : learn/src/io_function/select_server.cpp.i
+
+learn/src/io_function/select_server.s: learn/src/io_function/select_server.cpp.s
+.PHONY : learn/src/io_function/select_server.s
+
+# target to generate assembly for a file
+learn/src/io_function/select_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.s
+.PHONY : learn/src/io_function/select_server.cpp.s
 
 learn/src/simple_client.o: learn/src/simple_client.cpp.o
 .PHONY : learn/src/simple_client.o
@@ -203,6 +290,30 @@ learn/src/simple_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/learn/src/simple_server.cpp.s
 .PHONY : learn/src/simple_server.cpp.s
 
+learn/src/test.o: learn/src/test.cpp.o
+.PHONY : learn/src/test.o
+
+# target to build an object file
+learn/src/test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/learn/src/test.cpp.o
+.PHONY : learn/src/test.cpp.o
+
+learn/src/test.i: learn/src/test.cpp.i
+.PHONY : learn/src/test.i
+
+# target to preprocess a source file
+learn/src/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/learn/src/test.cpp.i
+.PHONY : learn/src/test.cpp.i
+
+learn/src/test.s: learn/src/test.cpp.s
+.PHONY : learn/src/test.s
+
+# target to generate assembly for a file
+learn/src/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/learn/src/test.cpp.s
+.PHONY : learn/src/test.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -236,14 +347,26 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lslserver"
+	@echo "... select_client"
+	@echo "... select_server"
 	@echo "... simple_client"
 	@echo "... simple_server"
+	@echo "... test"
+	@echo "... learn/src/io_function/select_client.o"
+	@echo "... learn/src/io_function/select_client.i"
+	@echo "... learn/src/io_function/select_client.s"
+	@echo "... learn/src/io_function/select_server.o"
+	@echo "... learn/src/io_function/select_server.i"
+	@echo "... learn/src/io_function/select_server.s"
 	@echo "... learn/src/simple_client.o"
 	@echo "... learn/src/simple_client.i"
 	@echo "... learn/src/simple_client.s"
 	@echo "... learn/src/simple_server.o"
 	@echo "... learn/src/simple_server.i"
 	@echo "... learn/src/simple_server.s"
+	@echo "... learn/src/test.o"
+	@echo "... learn/src/test.i"
+	@echo "... learn/src/test.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

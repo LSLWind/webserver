@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "simple_server"
+			"path" : "test"
 		}
 	],
 	"backtrace" : 1,
@@ -70,7 +70,7 @@
 			]
 		}
 	],
-	"id" : "simple_server::@6890427a1f51a3e7e1df",
+	"id" : "test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -86,8 +86,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "simple_server",
-	"nameOnDisk" : "simple_server",
+	"name" : "test",
+	"nameOnDisk" : "test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -108,7 +108,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "learn/src/simple_server.cpp",
+			"path" : "learn/src/test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

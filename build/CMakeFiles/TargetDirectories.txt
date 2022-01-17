@@ -1,5 +1,8 @@
+/usr/local/webserver/build/CMakeFiles/test.dir
 /usr/local/webserver/build/CMakeFiles/lslserver.dir
 /usr/local/webserver/build/CMakeFiles/simple_server.dir
 /usr/local/webserver/build/CMakeFiles/simple_client.dir
+/usr/local/webserver/build/CMakeFiles/select_server.dir
+/usr/local/webserver/build/CMakeFiles/select_client.dir
 /usr/local/webserver/build/CMakeFiles/edit_cache.dir
 /usr/local/webserver/build/CMakeFiles/rebuild_cache.dir
