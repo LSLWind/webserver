@@ -220,6 +220,43 @@ poll_client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poll_client.dir/build.make CMakeFiles/poll_client.dir/build
 .PHONY : poll_client/fast
 
+#=============================================================================
+# Target rules for targets named epoll_server
+
+# Build rule for target.
+epoll_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 epoll_server
+.PHONY : epoll_server
+
+# fast build rule for target.
+epoll_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
+.PHONY : epoll_server/fast
+
+learn/src/io_function/epoll_server.o: learn/src/io_function/epoll_server.cpp.o
+.PHONY : learn/src/io_function/epoll_server.o
+
+# target to build an object file
+learn/src/io_function/epoll_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/learn/src/io_function/epoll_server.cpp.o
+.PHONY : learn/src/io_function/epoll_server.cpp.o
+
+learn/src/io_function/epoll_server.i: learn/src/io_function/epoll_server.cpp.i
+.PHONY : learn/src/io_function/epoll_server.i
+
+# target to preprocess a source file
+learn/src/io_function/epoll_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/learn/src/io_function/epoll_server.cpp.i
+.PHONY : learn/src/io_function/epoll_server.cpp.i
+
+learn/src/io_function/epoll_server.s: learn/src/io_function/epoll_server.cpp.s
+.PHONY : learn/src/io_function/epoll_server.s
+
+# target to generate assembly for a file
+learn/src/io_function/epoll_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/learn/src/io_function/epoll_server.cpp.s
+.PHONY : learn/src/io_function/epoll_server.cpp.s
+
 learn/src/io_function/poll_client.o: learn/src/io_function/poll_client.cpp.o
 .PHONY : learn/src/io_function/poll_client.o
 
@@ -420,6 +457,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... epoll_server"
 	@echo "... lslserver"
 	@echo "... poll_client"
 	@echo "... poll_server"
@@ -428,6 +466,9 @@ help:
 	@echo "... simple_client"
 	@echo "... simple_server"
 	@echo "... test"
+	@echo "... learn/src/io_function/epoll_server.o"
+	@echo "... learn/src/io_function/epoll_server.i"
+	@echo "... learn/src/io_function/epoll_server.s"
 	@echo "... learn/src/io_function/poll_client.o"
 	@echo "... learn/src/io_function/poll_client.i"
 	@echo "... learn/src/io_function/poll_client.s"

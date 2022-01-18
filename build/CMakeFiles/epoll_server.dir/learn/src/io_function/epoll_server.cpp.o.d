@@ -1,5 +1,5 @@
-CMakeFiles/poll_server.dir/learn/src/io_function/poll_server.cpp.o: \
- /usr/local/webserver/learn/src/io_function/poll_server.cpp \
+CMakeFiles/epoll_server.dir/learn/src/io_function/epoll_server.cpp.o: \
+ /usr/local/webserver/learn/src/io_function/epoll_server.cpp \
  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -81,15 +81,16 @@ CMakeFiles/poll_server.dir/learn/src/io_function/poll_server.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/7/bits/std_abs.h /usr/include/assert.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/poll.h \
- /usr/include/x86_64-linux-gnu/sys/poll.h \
- /usr/include/x86_64-linux-gnu/bits/poll.h /usr/include/c++/7/iostream \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/x86_64-linux-gnu/sys/epoll.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/epoll.h /usr/include/c++/7/iostream \
  /usr/include/c++/7/ostream /usr/include/c++/7/ios \
  /usr/include/c++/7/iosfwd /usr/include/c++/7/bits/stringfwd.h \
  /usr/include/c++/7/bits/memoryfwd.h /usr/include/c++/7/bits/postypes.h \
  /usr/include/c++/7/cwchar /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -115,7 +116,6 @@ CMakeFiles/poll_server.dir/learn/src/io_function/poll_server.cpp.o: \
  /usr/include/c++/7/bits/stl_iterator.h \
  /usr/include/c++/7/bits/ptr_traits.h /usr/include/c++/7/debug/debug.h \
  /usr/include/c++/7/bits/predefined_ops.h /usr/include/c++/7/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
  /usr/include/c++/7/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h \
  /usr/include/c++/7/clocale /usr/include/locale.h \

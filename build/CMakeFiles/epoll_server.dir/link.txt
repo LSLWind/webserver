@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-7 -g CMakeFiles/epoll_server.dir/learn/src/io_function/epoll_server.cpp.o -o epoll_server 

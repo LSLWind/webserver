@@ -22,7 +22,8 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					]
 				}
 			],
@@ -44,12 +45,20 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "epoll_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-epoll_server-Debug-794a262c58098a230600.json",
+					"name" : "epoll_server",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lslserver::@6890427a1f51a3e7e1df",

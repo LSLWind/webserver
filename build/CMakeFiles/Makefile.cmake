@@ -51,4 +51,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/select_client.dir/DependInfo.cmake"
   "CMakeFiles/poll_server.dir/DependInfo.cmake"
   "CMakeFiles/poll_client.dir/DependInfo.cmake"
+  "CMakeFiles/epoll_server.dir/DependInfo.cmake"
   )
