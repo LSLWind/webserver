@@ -4,5 +4,7 @@
 /usr/local/webserver/build/CMakeFiles/simple_client.dir
 /usr/local/webserver/build/CMakeFiles/select_server.dir
 /usr/local/webserver/build/CMakeFiles/select_client.dir
+/usr/local/webserver/build/CMakeFiles/poll_server.dir
+/usr/local/webserver/build/CMakeFiles/poll_client.dir
 /usr/local/webserver/build/CMakeFiles/edit_cache.dir
 /usr/local/webserver/build/CMakeFiles/rebuild_cache.dir

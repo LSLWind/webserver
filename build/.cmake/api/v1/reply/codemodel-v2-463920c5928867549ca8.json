@@ -20,7 +20,9 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6,
+						7
 					]
 				}
 			],
@@ -40,7 +42,9 @@
 						2,
 						3,
 						4,
-						5
+						5,
+						6,
+						7
 					]
 				}
 			],
@@ -51,6 +55,20 @@
 					"id" : "lslserver::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-lslserver-Debug-ccc8c4bb5a11325e4fb3.json",
 					"name" : "lslserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "poll_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-poll_client-Debug-4af55afdb85d21ec6dfa.json",
+					"name" : "poll_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "poll_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-poll_server-Debug-3daa70fcb60648fef569.json",
+					"name" : "poll_server",
 					"projectIndex" : 0
 				},
 				{

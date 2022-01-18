@@ -19,6 +19,9 @@ add_executable(simple_client learn/src/simple_client.cpp)
 add_executable(select_server learn/src/io_function/select_server.cpp)
 add_executable(select_client learn/src/io_function/select_client.cpp)
 
+add_executable(poll_server learn/src/io_function/poll_server.cpp)
+add_executable(poll_client learn/src/io_function/poll_client.cpp)
+
 
 
 

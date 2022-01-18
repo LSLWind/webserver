@@ -28,5 +28,15 @@
   "directory": "/usr/local/webserver/build",
   "command": "/usr/bin/x86_64-linux-gnu-g++-7  -I/usr/local/webserver/include -g -std=gnu++11 -o CMakeFiles/select_client.dir/learn/src/io_function/select_client.cpp.o -c /usr/local/webserver/learn/src/io_function/select_client.cpp",
   "file": "/usr/local/webserver/learn/src/io_function/select_client.cpp"
+},
+{
+  "directory": "/usr/local/webserver/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -I/usr/local/webserver/include -g -std=gnu++11 -o CMakeFiles/poll_server.dir/learn/src/io_function/poll_server.cpp.o -c /usr/local/webserver/learn/src/io_function/poll_server.cpp",
+  "file": "/usr/local/webserver/learn/src/io_function/poll_server.cpp"
+},
+{
+  "directory": "/usr/local/webserver/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -I/usr/local/webserver/include -g -std=gnu++11 -o CMakeFiles/poll_client.dir/learn/src/io_function/poll_client.cpp.o -c /usr/local/webserver/learn/src/io_function/poll_client.cpp",
+  "file": "/usr/local/webserver/learn/src/io_function/poll_client.cpp"
 }
 ]

@@ -49,4 +49,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/simple_client.dir/DependInfo.cmake"
   "CMakeFiles/select_server.dir/DependInfo.cmake"
   "CMakeFiles/select_client.dir/DependInfo.cmake"
+  "CMakeFiles/poll_server.dir/DependInfo.cmake"
+  "CMakeFiles/poll_client.dir/DependInfo.cmake"
   )
