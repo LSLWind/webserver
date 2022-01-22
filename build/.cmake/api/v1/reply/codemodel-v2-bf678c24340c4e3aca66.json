@@ -22,8 +22,7 @@
 						4,
 						5,
 						6,
-						7,
-						8
+						7
 					]
 				}
 			],
@@ -45,8 +44,7 @@
 						4,
 						5,
 						6,
-						7,
-						8
+						7
 					]
 				}
 			],
@@ -54,8 +52,15 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-client-Debug-976b7d0a48a3e24cd81d.json",
+					"name" : "client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "epoll_server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-epoll_server-Debug-794a262c58098a230600.json",
+					"jsonFile" : "target-epoll_server-Debug-20d82f19bd2a047f585d.json",
 					"name" : "epoll_server",
 					"projectIndex" : 0
 				},
@@ -68,23 +73,9 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "poll_client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-poll_client-Debug-4af55afdb85d21ec6dfa.json",
-					"name" : "poll_client",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "poll_server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-poll_server-Debug-3daa70fcb60648fef569.json",
+					"jsonFile" : "target-poll_server-Debug-f7088577e1317fd417c7.json",
 					"name" : "poll_server",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "select_client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-select_client-Debug-483ef554c3f6d25c10a3.json",
-					"name" : "select_client",
 					"projectIndex" : 0
 				},
 				{
@@ -92,13 +83,6 @@
 					"id" : "select_server::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-select_server-Debug-823d2e0653ce45140d1d.json",
 					"name" : "select_server",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "simple_client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simple_client-Debug-464f74a5ac42c7e9917e.json",
-					"name" : "simple_client",
 					"projectIndex" : 0
 				},
 				{
@@ -113,6 +97,13 @@
 					"id" : "test::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-test-Debug-73c69a0aca812af81fd1.json",
 					"name" : "test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "thread::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-thread-Debug-02db91b6bcb4ea08e8cf.json",
+					"name" : "thread",
 					"projectIndex" : 0
 				}
 			]

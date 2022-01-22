@@ -156,17 +156,17 @@ simple_server/fast:
 .PHONY : simple_server/fast
 
 #=============================================================================
-# Target rules for targets named simple_client
+# Target rules for targets named client
 
 # Build rule for target.
-simple_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_client
-.PHONY : simple_client
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
 
 # fast build rule for target.
-simple_client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/build
-.PHONY : simple_client/fast
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 #=============================================================================
 # Target rules for targets named select_server
@@ -182,19 +182,6 @@ select_server/fast:
 .PHONY : select_server/fast
 
 #=============================================================================
-# Target rules for targets named select_client
-
-# Build rule for target.
-select_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 select_client
-.PHONY : select_client
-
-# fast build rule for target.
-select_client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/build
-.PHONY : select_client/fast
-
-#=============================================================================
 # Target rules for targets named poll_server
 
 # Build rule for target.
@@ -208,19 +195,6 @@ poll_server/fast:
 .PHONY : poll_server/fast
 
 #=============================================================================
-# Target rules for targets named poll_client
-
-# Build rule for target.
-poll_client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 poll_client
-.PHONY : poll_client
-
-# fast build rule for target.
-poll_client/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poll_client.dir/build.make CMakeFiles/poll_client.dir/build
-.PHONY : poll_client/fast
-
-#=============================================================================
 # Target rules for targets named epoll_server
 
 # Build rule for target.
@@ -232,6 +206,43 @@ epoll_server: cmake_check_build_system
 epoll_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
 .PHONY : epoll_server/fast
+
+#=============================================================================
+# Target rules for targets named thread
+
+# Build rule for target.
+thread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 thread
+.PHONY : thread
+
+# fast build rule for target.
+thread/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
+.PHONY : thread/fast
+
+learn/src/client.o: learn/src/client.cpp.o
+.PHONY : learn/src/client.o
+
+# target to build an object file
+learn/src/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/learn/src/client.cpp.o
+.PHONY : learn/src/client.cpp.o
+
+learn/src/client.i: learn/src/client.cpp.i
+.PHONY : learn/src/client.i
+
+# target to preprocess a source file
+learn/src/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/learn/src/client.cpp.i
+.PHONY : learn/src/client.cpp.i
+
+learn/src/client.s: learn/src/client.cpp.s
+.PHONY : learn/src/client.s
+
+# target to generate assembly for a file
+learn/src/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/learn/src/client.cpp.s
+.PHONY : learn/src/client.cpp.s
 
 learn/src/io_function/epoll_server.o: learn/src/io_function/epoll_server.cpp.o
 .PHONY : learn/src/io_function/epoll_server.o
@@ -257,30 +268,6 @@ learn/src/io_function/epoll_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/learn/src/io_function/epoll_server.cpp.s
 .PHONY : learn/src/io_function/epoll_server.cpp.s
 
-learn/src/io_function/poll_client.o: learn/src/io_function/poll_client.cpp.o
-.PHONY : learn/src/io_function/poll_client.o
-
-# target to build an object file
-learn/src/io_function/poll_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poll_client.dir/build.make CMakeFiles/poll_client.dir/learn/src/io_function/poll_client.cpp.o
-.PHONY : learn/src/io_function/poll_client.cpp.o
-
-learn/src/io_function/poll_client.i: learn/src/io_function/poll_client.cpp.i
-.PHONY : learn/src/io_function/poll_client.i
-
-# target to preprocess a source file
-learn/src/io_function/poll_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poll_client.dir/build.make CMakeFiles/poll_client.dir/learn/src/io_function/poll_client.cpp.i
-.PHONY : learn/src/io_function/poll_client.cpp.i
-
-learn/src/io_function/poll_client.s: learn/src/io_function/poll_client.cpp.s
-.PHONY : learn/src/io_function/poll_client.s
-
-# target to generate assembly for a file
-learn/src/io_function/poll_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poll_client.dir/build.make CMakeFiles/poll_client.dir/learn/src/io_function/poll_client.cpp.s
-.PHONY : learn/src/io_function/poll_client.cpp.s
-
 learn/src/io_function/poll_server.o: learn/src/io_function/poll_server.cpp.o
 .PHONY : learn/src/io_function/poll_server.o
 
@@ -305,30 +292,6 @@ learn/src/io_function/poll_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poll_server.dir/build.make CMakeFiles/poll_server.dir/learn/src/io_function/poll_server.cpp.s
 .PHONY : learn/src/io_function/poll_server.cpp.s
 
-learn/src/io_function/select_client.o: learn/src/io_function/select_client.cpp.o
-.PHONY : learn/src/io_function/select_client.o
-
-# target to build an object file
-learn/src/io_function/select_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/learn/src/io_function/select_client.cpp.o
-.PHONY : learn/src/io_function/select_client.cpp.o
-
-learn/src/io_function/select_client.i: learn/src/io_function/select_client.cpp.i
-.PHONY : learn/src/io_function/select_client.i
-
-# target to preprocess a source file
-learn/src/io_function/select_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/learn/src/io_function/select_client.cpp.i
-.PHONY : learn/src/io_function/select_client.cpp.i
-
-learn/src/io_function/select_client.s: learn/src/io_function/select_client.cpp.s
-.PHONY : learn/src/io_function/select_client.s
-
-# target to generate assembly for a file
-learn/src/io_function/select_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_client.dir/build.make CMakeFiles/select_client.dir/learn/src/io_function/select_client.cpp.s
-.PHONY : learn/src/io_function/select_client.cpp.s
-
 learn/src/io_function/select_server.o: learn/src/io_function/select_server.cpp.o
 .PHONY : learn/src/io_function/select_server.o
 
@@ -352,30 +315,6 @@ learn/src/io_function/select_server.s: learn/src/io_function/select_server.cpp.s
 learn/src/io_function/select_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.s
 .PHONY : learn/src/io_function/select_server.cpp.s
-
-learn/src/simple_client.o: learn/src/simple_client.cpp.o
-.PHONY : learn/src/simple_client.o
-
-# target to build an object file
-learn/src/simple_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.o
-.PHONY : learn/src/simple_client.cpp.o
-
-learn/src/simple_client.i: learn/src/simple_client.cpp.i
-.PHONY : learn/src/simple_client.i
-
-# target to preprocess a source file
-learn/src/simple_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.i
-.PHONY : learn/src/simple_client.cpp.i
-
-learn/src/simple_client.s: learn/src/simple_client.cpp.s
-.PHONY : learn/src/simple_client.s
-
-# target to generate assembly for a file
-learn/src/simple_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_client.dir/build.make CMakeFiles/simple_client.dir/learn/src/simple_client.cpp.s
-.PHONY : learn/src/simple_client.cpp.s
 
 learn/src/simple_server.o: learn/src/simple_server.cpp.o
 .PHONY : learn/src/simple_server.o
@@ -425,6 +364,30 @@ learn/src/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/learn/src/test.cpp.s
 .PHONY : learn/src/test.cpp.s
 
+learn/src/thread/thread.o: learn/src/thread/thread.cpp.o
+.PHONY : learn/src/thread/thread.o
+
+# target to build an object file
+learn/src/thread/thread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o
+.PHONY : learn/src/thread/thread.cpp.o
+
+learn/src/thread/thread.i: learn/src/thread/thread.cpp.i
+.PHONY : learn/src/thread/thread.i
+
+# target to preprocess a source file
+learn/src/thread/thread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/learn/src/thread/thread.cpp.i
+.PHONY : learn/src/thread/thread.cpp.i
+
+learn/src/thread/thread.s: learn/src/thread/thread.cpp.s
+.PHONY : learn/src/thread/thread.s
+
+# target to generate assembly for a file
+learn/src/thread/thread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/learn/src/thread/thread.cpp.s
+.PHONY : learn/src/thread/thread.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -457,39 +420,35 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... client"
 	@echo "... epoll_server"
 	@echo "... lslserver"
-	@echo "... poll_client"
 	@echo "... poll_server"
-	@echo "... select_client"
 	@echo "... select_server"
-	@echo "... simple_client"
 	@echo "... simple_server"
 	@echo "... test"
+	@echo "... thread"
+	@echo "... learn/src/client.o"
+	@echo "... learn/src/client.i"
+	@echo "... learn/src/client.s"
 	@echo "... learn/src/io_function/epoll_server.o"
 	@echo "... learn/src/io_function/epoll_server.i"
 	@echo "... learn/src/io_function/epoll_server.s"
-	@echo "... learn/src/io_function/poll_client.o"
-	@echo "... learn/src/io_function/poll_client.i"
-	@echo "... learn/src/io_function/poll_client.s"
 	@echo "... learn/src/io_function/poll_server.o"
 	@echo "... learn/src/io_function/poll_server.i"
 	@echo "... learn/src/io_function/poll_server.s"
-	@echo "... learn/src/io_function/select_client.o"
-	@echo "... learn/src/io_function/select_client.i"
-	@echo "... learn/src/io_function/select_client.s"
 	@echo "... learn/src/io_function/select_server.o"
 	@echo "... learn/src/io_function/select_server.i"
 	@echo "... learn/src/io_function/select_server.s"
-	@echo "... learn/src/simple_client.o"
-	@echo "... learn/src/simple_client.i"
-	@echo "... learn/src/simple_client.s"
 	@echo "... learn/src/simple_server.o"
 	@echo "... learn/src/simple_server.i"
 	@echo "... learn/src/simple_server.s"
 	@echo "... learn/src/test.o"
 	@echo "... learn/src/test.i"
 	@echo "... learn/src/test.s"
+	@echo "... learn/src/thread/thread.o"
+	@echo "... learn/src/thread/thread.i"
+	@echo "... learn/src/thread/thread.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
