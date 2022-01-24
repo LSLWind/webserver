@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "epoll_server"
+			"path" : "select_server"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 21,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
@@ -70,7 +70,7 @@
 			]
 		}
 	],
-	"id" : "epoll_server::@6890427a1f51a3e7e1df",
+	"id" : "select_server::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -86,8 +86,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "epoll_server",
-	"nameOnDisk" : "epoll_server",
+	"name" : "select_server",
+	"nameOnDisk" : "select_server",
 	"paths" : 
 	{
 		"build" : ".",
@@ -108,7 +108,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "learn/src/io_function/epoll_server.cpp",
+			"path" : "learn/src/io_function/select_server.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

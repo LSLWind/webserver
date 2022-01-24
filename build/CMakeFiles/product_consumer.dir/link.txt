@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-7 -g CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o -o product_consumer  -pthread 

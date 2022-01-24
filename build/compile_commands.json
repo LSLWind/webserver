@@ -38,5 +38,10 @@
   "directory": "/usr/local/webserver/build",
   "command": "/usr/bin/x86_64-linux-gnu-g++-7  -I/usr/local/webserver/include -g -pthread -std=gnu++11 -o CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o -c /usr/local/webserver/learn/src/thread/thread.cpp",
   "file": "/usr/local/webserver/learn/src/thread/thread.cpp"
+},
+{
+  "directory": "/usr/local/webserver/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -I/usr/local/webserver/include -g -pthread -std=gnu++11 -o CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o -c /usr/local/webserver/learn/src/thread/product_consumer.cpp",
+  "file": "/usr/local/webserver/learn/src/thread/product_consumer.cpp"
 }
 ]

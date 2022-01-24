@@ -220,6 +220,19 @@ thread/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
 .PHONY : thread/fast
 
+#=============================================================================
+# Target rules for targets named product_consumer
+
+# Build rule for target.
+product_consumer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 product_consumer
+.PHONY : product_consumer
+
+# fast build rule for target.
+product_consumer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/product_consumer.dir/build.make CMakeFiles/product_consumer.dir/build
+.PHONY : product_consumer/fast
+
 learn/src/client.o: learn/src/client.cpp.o
 .PHONY : learn/src/client.o
 
@@ -364,6 +377,30 @@ learn/src/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/learn/src/test.cpp.s
 .PHONY : learn/src/test.cpp.s
 
+learn/src/thread/product_consumer.o: learn/src/thread/product_consumer.cpp.o
+.PHONY : learn/src/thread/product_consumer.o
+
+# target to build an object file
+learn/src/thread/product_consumer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/product_consumer.dir/build.make CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o
+.PHONY : learn/src/thread/product_consumer.cpp.o
+
+learn/src/thread/product_consumer.i: learn/src/thread/product_consumer.cpp.i
+.PHONY : learn/src/thread/product_consumer.i
+
+# target to preprocess a source file
+learn/src/thread/product_consumer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/product_consumer.dir/build.make CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.i
+.PHONY : learn/src/thread/product_consumer.cpp.i
+
+learn/src/thread/product_consumer.s: learn/src/thread/product_consumer.cpp.s
+.PHONY : learn/src/thread/product_consumer.s
+
+# target to generate assembly for a file
+learn/src/thread/product_consumer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/product_consumer.dir/build.make CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.s
+.PHONY : learn/src/thread/product_consumer.cpp.s
+
 learn/src/thread/thread.o: learn/src/thread/thread.cpp.o
 .PHONY : learn/src/thread/thread.o
 
@@ -424,6 +461,7 @@ help:
 	@echo "... epoll_server"
 	@echo "... lslserver"
 	@echo "... poll_server"
+	@echo "... product_consumer"
 	@echo "... select_server"
 	@echo "... simple_server"
 	@echo "... test"
@@ -446,6 +484,9 @@ help:
 	@echo "... learn/src/test.o"
 	@echo "... learn/src/test.i"
 	@echo "... learn/src/test.s"
+	@echo "... learn/src/thread/product_consumer.o"
+	@echo "... learn/src/thread/product_consumer.i"
+	@echo "... learn/src/thread/product_consumer.s"
 	@echo "... learn/src/thread/thread.o"
 	@echo "... learn/src/thread/thread.i"
 	@echo "... learn/src/thread/thread.s"
