@@ -233,6 +233,19 @@ product_consumer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/product_consumer.dir/build.make CMakeFiles/product_consumer.dir/build
 .PHONY : product_consumer/fast
 
+#=============================================================================
+# Target rules for targets named future
+
+# Build rule for target.
+future: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 future
+.PHONY : future
+
+# fast build rule for target.
+future/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/future.dir/build.make CMakeFiles/future.dir/build
+.PHONY : future/fast
+
 learn/src/client.o: learn/src/client.cpp.o
 .PHONY : learn/src/client.o
 
@@ -377,6 +390,30 @@ learn/src/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/learn/src/test.cpp.s
 .PHONY : learn/src/test.cpp.s
 
+learn/src/thread/future.o: learn/src/thread/future.cpp.o
+.PHONY : learn/src/thread/future.o
+
+# target to build an object file
+learn/src/thread/future.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/future.dir/build.make CMakeFiles/future.dir/learn/src/thread/future.cpp.o
+.PHONY : learn/src/thread/future.cpp.o
+
+learn/src/thread/future.i: learn/src/thread/future.cpp.i
+.PHONY : learn/src/thread/future.i
+
+# target to preprocess a source file
+learn/src/thread/future.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/future.dir/build.make CMakeFiles/future.dir/learn/src/thread/future.cpp.i
+.PHONY : learn/src/thread/future.cpp.i
+
+learn/src/thread/future.s: learn/src/thread/future.cpp.s
+.PHONY : learn/src/thread/future.s
+
+# target to generate assembly for a file
+learn/src/thread/future.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/future.dir/build.make CMakeFiles/future.dir/learn/src/thread/future.cpp.s
+.PHONY : learn/src/thread/future.cpp.s
+
 learn/src/thread/product_consumer.o: learn/src/thread/product_consumer.cpp.o
 .PHONY : learn/src/thread/product_consumer.o
 
@@ -459,6 +496,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... client"
 	@echo "... epoll_server"
+	@echo "... future"
 	@echo "... lslserver"
 	@echo "... poll_server"
 	@echo "... product_consumer"
@@ -484,6 +522,9 @@ help:
 	@echo "... learn/src/test.o"
 	@echo "... learn/src/test.i"
 	@echo "... learn/src/test.s"
+	@echo "... learn/src/thread/future.o"
+	@echo "... learn/src/thread/future.i"
+	@echo "... learn/src/thread/future.s"
 	@echo "... learn/src/thread/product_consumer.o"
 	@echo "... learn/src/thread/product_consumer.i"
 	@echo "... learn/src/thread/product_consumer.s"

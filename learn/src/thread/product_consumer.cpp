@@ -1,7 +1,7 @@
 /**
  * 
  * 生产者消费者模型
- * 
+ * 条件变量
  **/
 #include <iostream>
 #include <thread>

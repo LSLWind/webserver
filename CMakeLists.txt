@@ -29,3 +29,6 @@ target_link_libraries(thread PUBLIC Threads::Threads)
 # 条件变量，condition_variable
 add_executable(product_consumer learn/src/thread/product_consumer.cpp)
 target_link_libraries(product_consumer PUBLIC Threads::Threads)
+# future 异步任务
+add_executable(future learn/src/thread/future.cpp)
+target_link_libraries(future PUBLIC Threads::Threads)
