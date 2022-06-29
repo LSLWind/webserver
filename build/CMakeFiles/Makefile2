@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /usr/local/webserver
+CMAKE_SOURCE_DIR = /home/lsl/Desktop/c+_projects/webserver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /usr/local/webserver/build
+CMAKE_BINARY_DIR = /home/lsl/Desktop/c+_projects/webserver/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -99,14 +99,14 @@ clean: CMakeFiles/future.dir/clean
 CMakeFiles/test.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=17,18 "Built target test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=17,18 "Built target test"
 .PHONY : CMakeFiles/test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/test.dir/rule
 
 # Convenience name for target.
@@ -125,14 +125,14 @@ CMakeFiles/test.dir/clean:
 CMakeFiles/lslserver.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lslserver.dir/build.make CMakeFiles/lslserver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lslserver.dir/build.make CMakeFiles/lslserver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=7,8 "Built target lslserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=7,8 "Built target lslserver"
 .PHONY : CMakeFiles/lslserver.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lslserver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lslserver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/lslserver.dir/rule
 
 # Convenience name for target.
@@ -151,14 +151,14 @@ CMakeFiles/lslserver.dir/clean:
 CMakeFiles/simple_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_server.dir/build.make CMakeFiles/simple_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=15,16 "Built target simple_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=15,16 "Built target simple_server"
 .PHONY : CMakeFiles/simple_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/simple_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/simple_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/simple_server.dir/rule
 
 # Convenience name for target.
@@ -177,14 +177,14 @@ CMakeFiles/simple_server.dir/clean:
 CMakeFiles/client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=1,2 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=1,2 "Built target client"
 .PHONY : CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/client.dir/rule
 
 # Convenience name for target.
@@ -203,14 +203,14 @@ CMakeFiles/client.dir/clean:
 CMakeFiles/select_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/select_server.dir/build.make CMakeFiles/select_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=13,14 "Built target select_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=13,14 "Built target select_server"
 .PHONY : CMakeFiles/select_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/select_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/select_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/select_server.dir/rule
 
 # Convenience name for target.
@@ -229,14 +229,14 @@ CMakeFiles/select_server.dir/clean:
 CMakeFiles/poll_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poll_server.dir/build.make CMakeFiles/poll_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poll_server.dir/build.make CMakeFiles/poll_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=9,10 "Built target poll_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=9,10 "Built target poll_server"
 .PHONY : CMakeFiles/poll_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/poll_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/poll_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/poll_server.dir/rule
 
 # Convenience name for target.
@@ -255,14 +255,14 @@ CMakeFiles/poll_server.dir/clean:
 CMakeFiles/epoll_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/epoll_server.dir/build.make CMakeFiles/epoll_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=3,4 "Built target epoll_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=3,4 "Built target epoll_server"
 .PHONY : CMakeFiles/epoll_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/epoll_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/epoll_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/epoll_server.dir/rule
 
 # Convenience name for target.
@@ -281,14 +281,14 @@ CMakeFiles/epoll_server.dir/clean:
 CMakeFiles/thread.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/thread.dir/build.make CMakeFiles/thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=19,20 "Built target thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=19,20 "Built target thread"
 .PHONY : CMakeFiles/thread.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/thread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/thread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/thread.dir/rule
 
 # Convenience name for target.
@@ -307,14 +307,14 @@ CMakeFiles/thread.dir/clean:
 CMakeFiles/product_consumer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/product_consumer.dir/build.make CMakeFiles/product_consumer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/product_consumer.dir/build.make CMakeFiles/product_consumer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=11,12 "Built target product_consumer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=11,12 "Built target product_consumer"
 .PHONY : CMakeFiles/product_consumer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/product_consumer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/product_consumer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/product_consumer.dir/rule
 
 # Convenience name for target.
@@ -333,14 +333,14 @@ CMakeFiles/product_consumer.dir/clean:
 CMakeFiles/future.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/future.dir/build.make CMakeFiles/future.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/future.dir/build.make CMakeFiles/future.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/usr/local/webserver/build/CMakeFiles --progress-num=5,6 "Built target future"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=5,6 "Built target future"
 .PHONY : CMakeFiles/future.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/future.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/future.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/webserver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles 0
 .PHONY : CMakeFiles/future.dir/rule
 
 # Convenience name for target.

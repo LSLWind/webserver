@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/usr/local/webserver/learn/src/io_function/select_server.cpp" "CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o" "gcc" "CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o.d"
+  "/home/lsl/Desktop/c+_projects/webserver/learn/src/io_function/select_server.cpp" "CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o" "gcc" "CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o.d"
   )
 
 # Targets to which this target links.

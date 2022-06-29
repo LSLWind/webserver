@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/usr/local/webserver/learn/src/thread/product_consumer.cpp" "CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o" "gcc" "CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o.d"
+  "/home/lsl/Desktop/c+_projects/webserver/learn/src/thread/product_consumer.cpp" "CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o" "gcc" "CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o.d"
   )
 
 # Targets to which this target links.

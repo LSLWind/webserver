@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/usr/local/webserver/learn/src/thread/future.cpp" "CMakeFiles/future.dir/learn/src/thread/future.cpp.o" "gcc" "CMakeFiles/future.dir/learn/src/thread/future.cpp.o.d"
+  "/home/lsl/Desktop/c+_projects/webserver/learn/src/thread/future.cpp" "CMakeFiles/future.dir/learn/src/thread/future.cpp.o" "gcc" "CMakeFiles/future.dir/learn/src/thread/future.cpp.o.d"
   )
 
 # Targets to which this target links.

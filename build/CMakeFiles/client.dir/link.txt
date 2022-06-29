@@ -1,1 +1,1 @@
-/usr/bin/x86_64-linux-gnu-g++-7 -g CMakeFiles/client.dir/learn/src/client.cpp.o -o client 
+/usr/bin/c++ CMakeFiles/client.dir/learn/src/client.cpp.o -o client 
