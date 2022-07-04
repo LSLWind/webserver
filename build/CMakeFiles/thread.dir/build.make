@@ -73,15 +73,15 @@ CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o: CMakeFiles/thread.dir/flags
 CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o: ../learn/src/thread/thread.cpp
 CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o: CMakeFiles/thread.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o -MF CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o.d -o CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/thread.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o -MF CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o.d -o CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/thread.cpp
 
 CMakeFiles/thread.dir/learn/src/thread/thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/thread.dir/learn/src/thread/thread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/thread.cpp > CMakeFiles/thread.dir/learn/src/thread/thread.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/thread.cpp > CMakeFiles/thread.dir/learn/src/thread/thread.cpp.i
 
 CMakeFiles/thread.dir/learn/src/thread/thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/thread.dir/learn/src/thread/thread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/thread.cpp -o CMakeFiles/thread.dir/learn/src/thread/thread.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/thread.cpp -o CMakeFiles/thread.dir/learn/src/thread/thread.cpp.s
 
 # Object files for target thread
 thread_OBJECTS = \

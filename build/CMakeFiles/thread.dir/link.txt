@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o -o thread 
+/usr/bin/g++ CMakeFiles/thread.dir/learn/src/thread/thread.cpp.o -o thread 

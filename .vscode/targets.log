@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 29 21:30:50 2022
+# Make data base, printed on Mon Jul  4 20:37:03 2022
 
 # Variables
 
@@ -38,8 +38,6 @@ PWD = /home/lsl/Desktop/c+_projects/webserver
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 XDG_DATA_DIRS = /usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
-# environment
-OLDPWD = /home/lsl/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -115,7 +113,7 @@ LC_MONETARY = zh_CN.UTF-8
 # environment
 LC_TIME = zh_CN.UTF-8
 # environment
-SSH_CLIENT = 192.168.187.1 56896 22
+SSH_CLIENT = 192.168.187.1 49999 22
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -153,7 +151,7 @@ LC_PAPER = zh_CN.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-76b21e5d-b233-4c6c-8bed-e024fe00aedc.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-d5dbe8fd-3131-441a-a724-e90af7972e5f.sock
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -161,7 +159,7 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/lsl
 # environment
-XDG_SESSION_ID = 4
+XDG_SESSION_ID = 25
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -173,9 +171,9 @@ SUFFIXES :=
 # environment
 LC_IDENTIFICATION = zh_CN.UTF-8
 # environment
-SSH_CONNECTION = 192.168.187.1 56896 192.168.187.210 22
+SSH_CONNECTION = 192.168.187.1 49999 192.168.187.210 22
 # variable set hash-table stats:
-# Load=81/1024=8%, Rehash=0, Collisions=5/108=5%
+# Load=80/1024=8%, Rehash=0, Collisions=5/107=5%
 
 # Pattern-specific Variable Values
 
@@ -183,9 +181,9 @@ SSH_CONNECTION = 192.168.187.1 56896 192.168.187.210 22
 
 # Directories
 
-# . (device 2051, inode 1051194): 11 files, no impossibilities.
+# . (device 2051, inode 1051194): 12 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -235,12 +233,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 166 B / avg = 8 B
-# current buf: size = 8162 B / used = 166 B / count = 19 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 187 B / avg = 9 B
+# current buf: size = 8162 B / used = 187 B / count = 20 / avg = 9 B
 
-# strcache performance: lookups = 22 / hit rate = 13%
+# strcache performance: lookups = 23 / hit rate = 13%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=1/22=5%
-# Finished Make data base on Wed Jun 29 21:30:50 2022
+# Load=20/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Mon Jul  4 20:37:03 2022
 
  

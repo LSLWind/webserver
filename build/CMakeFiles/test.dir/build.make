@@ -73,15 +73,15 @@ CMakeFiles/test.dir/learn/src/test.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/learn/src/test.cpp.o: ../learn/src/test.cpp
 CMakeFiles/test.dir/learn/src/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/learn/src/test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/learn/src/test.cpp.o -MF CMakeFiles/test.dir/learn/src/test.cpp.o.d -o CMakeFiles/test.dir/learn/src/test.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/test.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/learn/src/test.cpp.o -MF CMakeFiles/test.dir/learn/src/test.cpp.o.d -o CMakeFiles/test.dir/learn/src/test.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/test.cpp
 
 CMakeFiles/test.dir/learn/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/learn/src/test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/test.cpp > CMakeFiles/test.dir/learn/src/test.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/test.cpp > CMakeFiles/test.dir/learn/src/test.cpp.i
 
 CMakeFiles/test.dir/learn/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/learn/src/test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/test.cpp -o CMakeFiles/test.dir/learn/src/test.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/test.cpp -o CMakeFiles/test.dir/learn/src/test.cpp.s
 
 # Object files for target test
 test_OBJECTS = \

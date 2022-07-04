@@ -73,15 +73,15 @@ CMakeFiles/lslserver.dir/main.cpp.o: CMakeFiles/lslserver.dir/flags.make
 CMakeFiles/lslserver.dir/main.cpp.o: ../main.cpp
 CMakeFiles/lslserver.dir/main.cpp.o: CMakeFiles/lslserver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lslserver.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lslserver.dir/main.cpp.o -MF CMakeFiles/lslserver.dir/main.cpp.o.d -o CMakeFiles/lslserver.dir/main.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lslserver.dir/main.cpp.o -MF CMakeFiles/lslserver.dir/main.cpp.o.d -o CMakeFiles/lslserver.dir/main.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/main.cpp
 
 CMakeFiles/lslserver.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lslserver.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/main.cpp > CMakeFiles/lslserver.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/main.cpp > CMakeFiles/lslserver.dir/main.cpp.i
 
 CMakeFiles/lslserver.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lslserver.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/main.cpp -o CMakeFiles/lslserver.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/main.cpp -o CMakeFiles/lslserver.dir/main.cpp.s
 
 # Object files for target lslserver
 lslserver_OBJECTS = \

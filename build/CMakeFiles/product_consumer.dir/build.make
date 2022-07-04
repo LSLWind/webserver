@@ -73,15 +73,15 @@ CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o: CMakeFi
 CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o: ../learn/src/thread/product_consumer.cpp
 CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o: CMakeFiles/product_consumer.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o -MF CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o.d -o CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/product_consumer.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o -MF CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o.d -o CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/product_consumer.cpp
 
 CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/product_consumer.cpp > CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/product_consumer.cpp > CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.i
 
 CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/product_consumer.cpp -o CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/thread/product_consumer.cpp -o CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.s
 
 # Object files for target product_consumer
 product_consumer_OBJECTS = \

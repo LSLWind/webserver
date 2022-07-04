@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/test.dir/learn/src/test.cpp.o -o test 
+/usr/bin/g++ CMakeFiles/test.dir/learn/src/test.cpp.o -o test 

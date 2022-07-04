@@ -73,15 +73,15 @@ CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o: CMakeFil
 CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o: ../learn/src/io_function/select_server.cpp
 CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o: CMakeFiles/select_server.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o -MF CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o.d -o CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/io_function/select_server.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o -MF CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o.d -o CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/io_function/select_server.cpp
 
 CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/io_function/select_server.cpp > CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/io_function/select_server.cpp > CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.i
 
 CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/io_function/select_server.cpp -o CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/io_function/select_server.cpp -o CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.s
 
 # Object files for target select_server
 select_server_OBJECTS = \

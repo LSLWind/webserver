@@ -73,15 +73,15 @@ CMakeFiles/client.dir/learn/src/client.cpp.o: CMakeFiles/client.dir/flags.make
 CMakeFiles/client.dir/learn/src/client.cpp.o: ../learn/src/client.cpp
 CMakeFiles/client.dir/learn/src/client.cpp.o: CMakeFiles/client.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lsl/Desktop/c+_projects/webserver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/client.dir/learn/src/client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/learn/src/client.cpp.o -MF CMakeFiles/client.dir/learn/src/client.cpp.o.d -o CMakeFiles/client.dir/learn/src/client.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/client.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/client.dir/learn/src/client.cpp.o -MF CMakeFiles/client.dir/learn/src/client.cpp.o.d -o CMakeFiles/client.dir/learn/src/client.cpp.o -c /home/lsl/Desktop/c+_projects/webserver/learn/src/client.cpp
 
 CMakeFiles/client.dir/learn/src/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/client.dir/learn/src/client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/client.cpp > CMakeFiles/client.dir/learn/src/client.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lsl/Desktop/c+_projects/webserver/learn/src/client.cpp > CMakeFiles/client.dir/learn/src/client.cpp.i
 
 CMakeFiles/client.dir/learn/src/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/client.dir/learn/src/client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/client.cpp -o CMakeFiles/client.dir/learn/src/client.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lsl/Desktop/c+_projects/webserver/learn/src/client.cpp -o CMakeFiles/client.dir/learn/src/client.cpp.s
 
 # Object files for target client
 client_OBJECTS = \

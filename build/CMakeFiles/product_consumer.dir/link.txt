@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o -o product_consumer 
+/usr/bin/g++ CMakeFiles/product_consumer.dir/learn/src/thread/product_consumer.cpp.o -o product_consumer 

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/poll_server.dir/learn/src/io_function/poll_server.cpp.o -o poll_server 
+/usr/bin/g++ CMakeFiles/poll_server.dir/learn/src/io_function/poll_server.cpp.o -o poll_server 

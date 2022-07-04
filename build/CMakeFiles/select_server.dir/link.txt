@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o -o select_server 
+/usr/bin/g++ CMakeFiles/select_server.dir/learn/src/io_function/select_server.cpp.o -o select_server 

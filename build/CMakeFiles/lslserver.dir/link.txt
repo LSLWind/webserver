@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lslserver.dir/main.cpp.o -o lslserver 
+/usr/bin/g++ CMakeFiles/lslserver.dir/main.cpp.o -o lslserver 

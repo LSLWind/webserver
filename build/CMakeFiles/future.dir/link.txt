@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/future.dir/learn/src/thread/future.cpp.o -o future 
+/usr/bin/g++ CMakeFiles/future.dir/learn/src/thread/future.cpp.o -o future 

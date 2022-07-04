@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/epoll_server.dir/learn/src/io_function/epoll_server.cpp.o -o epoll_server 
+/usr/bin/g++ CMakeFiles/epoll_server.dir/learn/src/io_function/epoll_server.cpp.o -o epoll_server 
